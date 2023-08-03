@@ -1,0 +1,190 @@
+
+@media (max-width:1048px) {
+    label.logo {
+        font-size: 26px;
+        padding-left: 60px;
+    }
+
+
+    nav ul {
+        margin-right: 20px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    .home-slider {
+        left: 10%;
+    }
+}
+
+
+
+
+/* 909px */
+
+@media (max-width:909px) {
+
+   
+    nav a{
+        font-size: 20px;
+    }
+
+    .sub-menu li a {
+        font-size: 17px;
+    }
+
+    .gallery {
+        columns: 4;
+    }
+
+}
+
+
+@media(max-width:804px) {
+    .content span{
+        font-size: 1.8rem;
+    } 
+}
+
+
+/* -----------768px-------- */
+@media (max-width:768px) {
+
+    nav li.btwn {
+        display: none;
+        margin: 0 8px;
+        line-height: 80px;
+    }
+
+    #loginbtn {
+        display: block;
+    }
+
+    .section-form {
+        width: 50%;
+    }
+
+    .content span{
+        font-size: 1.8rem;
+    } 
+    
+      
+}
+
+
+@media (max-width:692px) {
+    .content span{
+        font-size: 1.6rem;
+    } 
+
+    .gallery {
+        columns: 3;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+/* -----------632px-------- */
+
+@media (max-width:632px) {
+    
+    .container {
+        width: 350px;
+    }
+
+    label,
+    .switch,
+    input::placeholder,
+    #btn{
+        font-size: 16px;
+    }
+
+    .element i {
+        position: absolute;
+        left: 40px;
+        top: 7px;
+        font-size: 16px;
+    }
+
+    .section-form {
+        width: 60%;
+      }
+
+      .cate-container {
+        height: 150px !important;
+    }
+
+    .content span{
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    } 
+
+    .search {
+        width: 70%;
+        padding: 14px;
+        border-radius: 5px;
+        cursor: text;
+    }
+
+    .label h3 {
+        font-size: 20px;
+    }
+    
+      
+
+}
+
+
+
+/* -----------550px-------- */
+
+@media(max-width:550px){
+    .section-form {
+        width: 70%;
+      }
+
+      nav ul {
+        margin-top: 3px;
+    }
+
+    label.logo {
+        padding: 0 40px;
+    }
+
+    nav li {
+        margin: 0 6px;
+    }
+
+    .home-slider {
+        top: 120px;
+    }
+
+    .sub-menu {
+       background: rgba(0,0,0,0.9);
+    }
+    
+}
+
+@media(max-width:500px) {
+    .overlay3 span {
+        font-size: 12px;
+    }
+
+    .content span{
+        font-size: 1.4rem;
+
+    } 
+
+    .home-slider {
+        top: 120px;
+        }
+}

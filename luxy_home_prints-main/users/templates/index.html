@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p>This is the landing page body</p>
+<a href="{% url 'users:login' %}">Sign In</a>
+
+{% if user == True %}
+<p>user page</p>
+name : {{name}}<br>
+username : {{username}}<br>
+email : {{email}}<br>
+avatar : <img src="{{avatar.image.url}}" alt="avatar">
+
+<a href="{% url 'users:logout' %}">Log Out</a>
+{% endif %}
+
+{% endblock %}

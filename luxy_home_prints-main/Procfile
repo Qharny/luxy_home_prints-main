@@ -1,0 +1,1 @@
+web: gunicorn luxy_home_prints.wsgi:application --log-file -

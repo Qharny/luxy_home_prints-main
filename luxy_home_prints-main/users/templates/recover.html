@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script type="text/javascript" src="{% static 'css/recover.js' %}"></script>
+</head>
+<body>
+
+    <p id="status">status: {{status}}</p><br>
+    <p id="msg">msg: {{msg}}</p><br>
+    <p>Enter your email below to recieve a recovery mail</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>E-mail</p><br>
+        <input name="email" type="text" placeholder="email"><br>
+        <Button type="submit">Send</Button>
+    </form>
+    
+    
+    <p>Enter the recovery pin</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Recovery Pin</p><br>
+        <input name="auth_token" type="text" placeholder="pin"><br>
+        <Button type="submit">Submit</Button>
+    </form>
+    
+ 
+    
+    <p>Enter a new password</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Password</p><br>
+        <input name="password" type="password" placeholder="password"><br>
+        <Button type="submit">Change</Button>
+    </form>
+    
+</body>
+</html>

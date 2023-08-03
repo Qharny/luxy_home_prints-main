@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title> Login Page</title>
+
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <section class="section-form">
+        <h2>Login User</h2>
+        {{msg}}
+        <form action="" method="post">
+          {% csrf_token %}
+          <input name="email" type="text" placeholder="Email" id="username" novalidate/>
+          <input name="password" type="password" placeholder="Password" id="password" />
+
+          <input type="submit" value="Sign in" id="sign_in" />
+
+          Don't have account? <a href="{% url 'users:register' %}"> Register </a>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

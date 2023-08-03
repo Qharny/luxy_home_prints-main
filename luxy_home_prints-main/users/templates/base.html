@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Picapic</title>
+
+        {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+    </head>
+
+<!-----------------
+    css link 
+---------------->
+
+<body>
+    <nav>
+        <label for="" class="logo">Picapic</label>
+        <ul class="navbar">
+            <li class="btwn"><a href="{% url 'users:login' %}" class="active">Login</a>|<a href="{% url 'users:register' %}" class="active">Register</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><i class="fa-solid fa-bars" id="icon"></i>
+
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Print My Pictures</a></li>
+                        <li><a href="#">Photographers</a></li>
+                        <li><a href="#">Picture Editors</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            
+            
+            </li>
+        </ul>
+    </nav>
+
+    {% block content %}
+    <!-- Content goes here -->
+    {% endblock content %}
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
